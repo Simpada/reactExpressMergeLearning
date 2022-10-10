@@ -8,11 +8,11 @@ app.get("/", (req, res, next) => {
 });
 */
 
-app.get("/login", (req, res, next) => {
+app.get("/api/login", (req, res, next) => {
   res.json({ username: "Noen Andre" });
 });
 
-app.post("/login", (req, res, next) => {
+app.post("/api/login", (req, res, next) => {
   res.sendStatus(401);
 });
 
