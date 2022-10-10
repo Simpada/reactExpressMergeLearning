@@ -40,6 +40,7 @@ function Application() {
       <Routes>
         <Route path={"/"} element={<FrontPage />}></Route>
         <Route path={"/login"} element={<Login />}></Route>
+        <Route path={"/*"} element={<h1>Not Found</h1>}></Route>
       </Routes>
     </BrowserRouter>
   );
