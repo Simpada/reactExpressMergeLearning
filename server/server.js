@@ -18,8 +18,14 @@ app.post("/api/login", (req, res, next) => {
 });
 
 app.use(express.static("../client/dist"));
+
+// Holy commando to fix BrowserRouter
 app.use((req, res, next) => {
-  res.sendFile(path.resolve("../client/dist/index.html"));
+  if (req.method === "GET" && !req.path.startsWith("/api")) {
+    res.sendFile(path.resolve("../client/dist/index.html"));
+  } else {
+    next();
+  }
 });
 
 const server = app.listen(process.env.PORT || 3000, () => {
