@@ -1,0 +1,29 @@
+{
+  "name": "reactexpressmergelearning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "build": "cd server && npm install",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx}",
+    "format:check": "prettier --check **/*.{js,jsx,ts,tsx}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simpada/reactExpressMergeLearning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simpada/reactExpressMergeLearning/issues"
+  },
+  "homepage": "https://github.com/Simpada/reactExpressMergeLearning#readme",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
+  }
+}
