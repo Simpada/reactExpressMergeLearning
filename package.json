@@ -9,7 +9,9 @@
     "format": "prettier --write **/*.{js,jsx,ts,tsx}",
     "format:check": "prettier --check **/*.{js,jsx,ts,tsx}",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+
+    "update": "npm install && cd server && npm install && cd ../client && npm install"
   },
   "repository": {
     "type": "git",
